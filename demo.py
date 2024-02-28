@@ -1,5 +1,5 @@
-from us_visa.logger import logging
-from us_visa.exceptions import USvisaException
+from us-visa.logger import logging
+from us-visa.exceptions import USvisaException
 import sys
 
 try:
