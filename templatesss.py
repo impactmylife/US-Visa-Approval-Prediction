@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 
-project_name = "us-visa" # root folder
+project_name = "us_visa" # root folder
 
 list_of_files = [
     f"{project_name}/__init__.py",
