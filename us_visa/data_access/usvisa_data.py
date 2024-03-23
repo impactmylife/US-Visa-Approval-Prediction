@@ -33,10 +33,10 @@ class USvisaData:
             else:
                 collection = self.mongo_client[database_name][collection_name]
 
-            df = pd.DataFrame(list(collection.find()))
+            df = pd.DataFrame(list(collection.find())) # getting the dataframe
             if "_id" in df.columns.to_list(): # if id_column is there, try to remove it
                 df = df.drop(columns=["_id"], axis=1)
-            df.replace({"na":np.nan},inplace=True) # replace na with nan incase we have any missing values
+            df.replace({"na":np.nan},inplace=True) # replace na with nan incase we have any missing values or if any missing value, replace it with nan
             return df
         except Exception as e: # if any exception is there, raise it
             raise USvisaException(e,sys)

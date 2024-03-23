@@ -20,6 +20,8 @@ boto3
 mypy_boto3-s3
 botocore
 fastapi
+pymongo
+certifi
 uvicorn
 jinja2
 python-multipart
