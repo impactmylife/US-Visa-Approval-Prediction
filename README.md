@@ -2,7 +2,7 @@
 
 # creating python environment
 1. conda create -n visa python=3.8 -y
-2. conda activate vida
+2. conda activate visa
 3. pip install -r requirements.txt 
 
 # HOW TO RUN GIT
